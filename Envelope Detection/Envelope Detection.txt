@@ -1,0 +1,11 @@
+Envelope Detection Algorithm
+
+1. Rectify
+2. Peaking Filter w/ Moving Window
+3. Low Pass Filter
+    -Smooth
+
+Advantage of peaking filter over just LPF:
+ -envelope is not attenuated relative to signal
+
+[See Jarne: An heuristic approach to obtain signal envelope...]

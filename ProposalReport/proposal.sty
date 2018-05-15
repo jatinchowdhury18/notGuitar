@@ -1,0 +1,65 @@
+\usepackage[letterpaper,margin=0.5in,headsep=10pt,headheight=24pt,footskip=15pt]{geometry}
+\usepackage{amsmath, setspace, xspace, calc, color}
+\usepackage{graphicx}
+\usepackage{ifxetex}
+\usepackage{url}
+\usepackage[ breaklinks=true, colorlinks=true, linkcolor=linkcolor, anchorcolor=anchorcolor, citecolor=citecolor, filecolor=filecolor, menucolor=menucolor, runcolor=runcolor, pagebackref=true, linktocpage, draft=false, pageanchor=true, hyperfigures=true, plainpages=false]{hyperref}
+
+
+% ===== XETEX===============
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont[Mapping=tex-text]{Georgia}
+%\setsansfont[Mapping=tex-text]{Skia}
+%\setmainfont[Mapping=tex-text]{Times New Roman}
+%\setmonofont{Monaco}
+%\setmainfont[Mapping=tex-text]{Georgia}
+%\setsansfont[Scale=0.86]{Skia}
+%\setmonofont[Scale=0.8]{Monaco} 
+% test with:
+% \rmfamily\pangram\sffamily\pangram\ttfamily\pangram\rmfamily
+%\def\pangram{aaaaaaaaaaaaaaaa}
+% ==========================
+
+
+% ==========================
+% ===        COLOR      ====
+\usepackage{color}
+\definecolor{cardinal}{cmyk}{0,1,0.63,0.29}
+\definecolor{gold}{cmyk}{0,0.24,0.94,0}
+\definecolor{mybrownlighter}{cmyk}{0.32,0.57,0.90,0.21}
+\definecolor{mybrown}{cmyk}{0.32,0.57,0.90,0.61}
+\definecolor{mylightt}{cmyk}{0.034,0.195,0.106,0.000}
+\definecolor{draftlink1}{rgb}{.32, .35, .80}
+\definecolor{draftlink2}{rgb}{.46, .71, .44}
+\definecolor{draftlink3}{rgb}{.60, .41, .44}
+
+% ==========================
+
+
+
+
+% ==========================
+\renewcommand{\emph}[1]{\textit{\textbf{\color{mybrown}#1}}}
+
+
+\newcommand{\eg}{\textit{e.g.,\ }}
+\newcommand{\etc}{\textit{etc.\@}}
+\newcommand{\vs}{\textit{vs.\ }}
+\newcommand{\ie}{\textit{i.e.,\ }}
+\newcommand{\etal}{\textit{et al.\@}}
+\newcommand{\cf}{\textit{cf.,\ }}
+\newcommand{\vi}{\textit{v.i.,\ }}
+
+\newcommand{\outline}[1]{{\color{orange}#1}}
+%\renewcommand{\outline}[1]{}
+
+
+
+\definecolor{runcolor}{cmyk}{0.077,0.117,0.102,0.000}
+\definecolor{filecolor}{cmyk}{0.404,0.388,0.607,0.050}
+\definecolor{citecolor}{cmyk}{0.501,0.496,0.581,0.0169}
+\definecolor{anchorcolor}{cmyk}{0.486,0.579,0.789,0.244}
+\definecolor{linkcolor}{cmyk}{0.838,0.720,0.059,0.055}

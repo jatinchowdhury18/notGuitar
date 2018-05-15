@@ -1,0 +1,1 @@
+"./testing_main.obj" "./c6713dskinit.obj" "./Vectors_intr.obj" -l"csl6713.lib" -l"dsk6713bsl.lib" -l"rts6700.lib" "../C6713dsk.cmd" 
