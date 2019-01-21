@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{Zolzer:2011:DDA:2028616}
+Udo Zolzer,
+\newblock {\em DAFX: Digital Audio Effects},
+\newblock Wiley Publishing, 2nd edition, 2011.
+
+\bibitem{SDFT}
+E.~Jacobsen and R.~Lyons,
+\newblock ``The sliding dft,''
+\newblock {\em IEEE Signal Processing Magazine}, vol. 20, no. 2, pp. 74--80,
+  Mar 2003.
+
+\bibitem{DBLP:journals/corr/Jarne17}
+Cecilia Jarne,
+\newblock ``Simple empirical algorithm to obtain signal envelope in three
+  steps,''
+\newblock {\em CoRR}, vol. abs/1703.06812, 2017.
+
+\bibitem{NoteOnset}
+J.~P. Bello, L.~Daudet, S.~Abdallah, C.~Duxbury, M.~Davies, and M.~B. Sandler,
+\newblock ``A tutorial on onset detection in music signals,''
+\newblock {\em IEEE Transactions on Speech and Audio Processing}, vol. 13, no.
+  5, pp. 1035--1047, Sept 2005.
+
+\end{thebibliography}
