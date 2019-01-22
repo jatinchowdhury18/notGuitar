@@ -96,7 +96,7 @@
 
 
 \threeaffiliations{
-\paperauthorA \,\sthanks{Thanks to Richard Leahy for guidance and support}}
+\paperauthorA \,}
 {\href{http://ccrma.stanford.edu}{Center for Computer Research in Music and Acoustics} \\ Stanford University \\ Palo Alto, CA \\ {\tt \href{mailto:jatin@ccrma.stanford.edu}{jatin@ccrma.stanford.edu}}}
 {\paperauthorB \,}
 {\href{https://minghsiehee.usc.edu/}{Ming Hsieh Department of Electrical Engineering} \\ University of Southern California \\ Los Angeles, CA }
@@ -113,15 +113,14 @@
 
 \maketitle
 \section{Abstract}
-NotGuitar is a DSP system designed to perform real-time timbral conversion from electric guitar to saxophone
+NotGuitar is a DSP system designed to perform real-time timbral conversion from electric guitar to saxophone.
 In order to preserve the dynamic and expressive elements of the guitarist's playing as much as possible,
 notGuitar does not use MIDI or synthesis, but simply processes the input guitar signal. 
 NotGuitar was implemented using a Texas Instruments DSK6713 DSP board in May 2018 at the University of
 Southern California.
 
 \section{Introduction}
-The specific sound of a particular instrument is known as the ``timbre'' of
-the instrument, and is made up primarily of two parts: frequency characteristics
+The specific sound of a particular instrument, or ``timbre'', is made up primarily of two parts: frequency characteristics
 (harmonic structure) and an amplitude characteristics (attack, sustain, release)
 \cite{Zolzer:2011:DDA:2028616}. NotGuitar uses note onset and envelope detection combined with
 amplitude envelope modulation to alter the amplitude characteristics.
@@ -173,11 +172,11 @@ In the system described above, the STFT would be operating on nearly identical
 windows in consecutive time steps. The only differences would be one new sample
 entering the window, one old sample leaving the window, and all the other samples
 being shifted one sample over. Using this information, we next considered using a
-Sliding Discrete Fourier Transform \cite{SDFT}. While the STFT has a time complexity
+Sliding Discrete Fourier Transform (SDFT) \cite{SDFT}. While the STFT has a time complexity
 of $\mathcal{O}(n\log{}n)$ for both the forward and inverse transforms,
 the SDFT is $\mathcal{O}(n)$ for the forward transform. In the final system, the SDFT is used to calculate the
 Fourier Transform of the first four frequency bins, which then informs the system which set
-of frequency multipliers to use for the circular convolution.
+of frequency multipliers to use for circular convolution.
 
 \subsubsection{Circular Convolution}
 Since the multiplication of two signals in the frequency domain
@@ -195,7 +194,7 @@ After making the decision to use circular convolution for frequency filtering, w
 the overtone weightings to properly convert a guitar's harmonic
 structure into one that matches a saxophone. To do this, we recorded
 25 notes on both guitar and saxophone, and used \texttt{Matlab} to detect the
-relative amplitudes of each overtone for each notes. These relative
+relative amplitudes of each overtone for each note. These relative
 amplitudes allowed us to calculate a multiplier value to be applied to
 each overtone, imposing the frequency characteristics of a saxophone on
 the guitar signal. However, our implementation of these frequency multipliers
@@ -271,7 +270,7 @@ the frequency content (or lack thereof) of the guitar. Given those
 limitations, the system performs well, and the output signal comes fairly
 close to that of a saxophone. The main limitation of our real-time system
 was that in order to complete all the neccesary processing without introducing
-distortion from dropped samples, we needed to lower the sampling rate to 16 kHz.
+distortion from dropped samples, we needed to lower the sampling rate to 24 kHz.
 Additionally, the lack of high frequency content in the
 guitar signal made it difficult to produce a fully natural sound
 as taking the square of the input signal introduced some high frequency
@@ -298,12 +297,19 @@ Along with a unique harmonic structure, each musical instrument
 also has a unique amplitude envelope, helping give it a unique timbre.
 The amplitude envelope has three parts: the attack, sustain and release. 
 
-\begin{figure}[ht]
-  \includegraphics[width=2.5in]{Pictures/ASR.png}
-  \centering
-  \caption{\label{AmpEnv} {\it The ASR Amplitude Envelope}}
-  \centering
-  \end{figure}
+%\begin{figure}[ht]
+%  \includegraphics[width=2.5in]{Pictures/ASR.png}
+%  \centering
+%  \caption{\label{AmpEnv} {\it The ASR Amplitude Envelope}}
+%  \centering
+%  \end{figure}
+
+\begin{figure*}[ht]
+  \center
+  \includegraphics[width=3in]{Pictures/Attack_Env.png}
+  \includegraphics[width=3in]{Pictures/Release_Env.png}
+  \caption{\label{AttRel} {\it Attack and Release Multipliers}}
+  \end{figure*}
 
 \begin{itemize}
 \item Attack: The attack of a note is the event that triggers the onset
@@ -328,8 +334,14 @@ muting the strings.
 We converted the amplitude envelope of a
 guitar to that of a saxophone by using use note detection methods to determine when
 the attack, sustain, and release parts of a note began
-and then use multiplier
+and then using multiplier
 tables to scale the signal to match the desired amplitude envelope.
+
+\begin{figure}[ht]
+  \includegraphics[width=3in]{Pictures/EnvDetection.jpg}
+  \centering
+  \caption{\label{SaxEnv} {\it Envelope Detection for Saxophone Sample}}
+  \end{figure}
 
 \subsection{Envelope Detection}
 In order to generate the amplitude multiplier tables mentioned above,
@@ -341,17 +353,10 @@ We were then able to store the envelope values for the attack and release parts 
 to be used in real-time (see Fig. \ref{AttRel}).
 
 \begin{figure}[ht]
-  \includegraphics[width=3in]{Pictures/EnvDetection.jpg}
+  \includegraphics[width=3in]{Pictures/NoteDetect1.jpg}
+  \includegraphics[width=3in]{Pictures/NoteDetect2.jpg}
+  \caption{\label{Onset} {\it Note Onset Detection for Guitar Sample}}
   \centering
-  \caption{\label{SaxEnv} {\it Envelope Detection for Saxophone Sample}}
-  \end{figure}
-
-\begin{figure}[ht]
-  \includegraphics[width=3in]{Pictures/Attack_Env.png}
-  \centering
-  \includegraphics[width=3in]{Pictures/Release_Env.png}
-  \centering
-  \caption{\label{AttRel} {\it Attack and Release Multipliers}}
   \end{figure}
 
 \subsection{Note Detection}
@@ -368,13 +373,12 @@ the sustain part of the waveform, if the output of the peaking filter was some
 threshold above the average of the peaking filter window, we consider that a new
 note, and thus trigger the attack envelope modulation.
 
-
-\begin{figure*}[ht]
-  \includegraphics[width=3in]{Pictures/NoteDetect1.jpg}
-  \includegraphics[width=3in]{Pictures/NoteDetect2.jpg}
-  \caption{\label{Onset} {\it Note Onset Detection for Guitar Sample}}
+\begin{figure}[ht]
+  \includegraphics[width=3in]{Pictures/Sustain_Env.png}
   \centering
-  \end{figure*}
+  \caption{\label{Sustain} {\it Sustain Envelope}}
+  \centering
+  \end{figure}
 
 \subsection{Sustain}
 Finding a transfer function for the sustain part of the waveform proved
@@ -387,16 +391,9 @@ as an exponential decay, and the saxophone sustain as being roughly flat.
 Therefore, in order to obtain the flat response from the exponential decay,
 we need to multiply the signal by an exponentially increasing function (see Fig.\ref{Sustain}).
 Along with giving our sound a much more saxophone-like sustain, the advantage of
-modeling the sustain in this way, is that the transfer function approaches a
-constant multiplier value, as the sustain extends to be
+modeling the sustain in this way is that the transfer function approaches a
+constant multiplier value as the sustain extends to be
 arbitrarily long, thus ensuring stability.
-
-\begin{figure}[ht]
-  \includegraphics[width=3in]{Pictures/Sustain_Env.png}
-  \centering
-  \caption{\label{Sustain} {\it Sustain Envelope}}
-  \centering
-  \end{figure}
 
 \subsection {Results}
 Ultimately, the amplitude envelopes worked as expected for all three parts
@@ -422,8 +419,8 @@ the real-time system.
 Our system is currently trained to be used for one note at a time,
 which limits the number of things that a guitar player can do with
 it. Even though saxophones technically cannot play chords, extending
-the system so the user can play a chord and have it sound like a
-saxophones ensemble would be interesting and useful.
+the system so the user can play a chord similar to a 
+saxophone ensemble would be interesting and useful.
 However, this feature would require a multi-note frequency detection
 algorithm, requiring more computation power.
 \newline\newline
@@ -434,7 +431,7 @@ require more off-line training to identify the frequency and
 amplitude characteristics of each instrument. Another aspect that would enhance the user experience
 would be to make the system be adaptable for users' desired control.
 For example, the system could allow for the user to vary the timbre intensity
-and/or have a foot pedal for sustain length.
+and/or have a foot pedal to control sustain length.
 
 \section{Documentation of Real-Time System}
 A video demonstration of the notGuitar system working in

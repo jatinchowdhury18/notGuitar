@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2018.2.11)  21 JAN 2019 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2018.2.11)  21 JAN 2019 16:14
 entering extended mode
 **"d:/Code/notGuitar/DAFX Paper/notGuitar_DAFX.tex"
 ("d:/Code/notGuitar/DAFX Paper/notGuitar_DAFX.tex"
@@ -404,10 +404,10 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 <Pictures/FlowChart.png, id=101, 1686.3pt x 747.79375pt>
 File: Pictures/FlowChart.png Graphic file (type png)
  <use Pictures/FlowChart.png>
-Package pdftex.def Info: Pictures/FlowChart.png used on input line 135.
+Package pdftex.def Info: Pictures/FlowChart.png used on input line 134.
 (pdftex.def)             Requested size: 361.34999pt x 160.23622pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--150
+Underfull \hbox (badness 10000) in paragraph at lines 139--149
 
  []
 
@@ -415,151 +415,152 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--150
 
 
 
-] <Pictures/FreqPlot1.png, id=127, 1628.0825pt x 1280.785pt>
+] <Pictures/FreqPlot1.png, id=126, 1628.0825pt x 1280.785pt>
 File: Pictures/FreqPlot1.png Graphic file (type png)
  <use Pictures/FreqPlot1.png>
-Package pdftex.def Info: Pictures/FreqPlot1.png used on input line 248.
+Package pdftex.def Info: Pictures/FreqPlot1.png used on input line 247.
 (pdftex.def)             Requested size: 505.89pt x 397.97733pt.
 
-Overfull \hbox (7.96678pt too wide) in paragraph at lines 248--249
+Overfull \hbox (7.96678pt too wide) in paragraph at lines 247--248
  [] 
  []
 
-<Pictures/FreqMult1_2.png, id=128, 1124.2pt x 843.15pt>
+<Pictures/FreqMult1_2.png, id=127, 1124.2pt x 843.15pt>
 File: Pictures/FreqMult1_2.png Graphic file (type png)
  <use Pictures/FreqMult1_2.png>
-Package pdftex.def Info: Pictures/FreqMult1_2.png used on input line 253.
+Package pdftex.def Info: Pictures/FreqMult1_2.png used on input line 252.
 (pdftex.def)             Requested size: 252.94499pt x 189.70056pt.
- <Pictures/FreqMult3.png, id=129, 1124.2pt x 843.15pt>
+ <Pictures/FreqMult3.png, id=128, 1124.2pt x 843.15pt>
 File: Pictures/FreqMult3.png Graphic file (type png)
  <use Pictures/FreqMult3.png>
-Package pdftex.def Info: Pictures/FreqMult3.png used on input line 254.
+Package pdftex.def Info: Pictures/FreqMult3.png used on input line 253.
 (pdftex.def)             Requested size: 252.94499pt x 189.70056pt.
 
-Overfull \hbox (9.67679pt too wide) in paragraph at lines 253--255
+Overfull \hbox (9.67679pt too wide) in paragraph at lines 252--254
 [][] [] 
  []
 
-<Pictures/FreqMult4.png, id=130, 1124.2pt x 843.15pt>
+<Pictures/FreqMult4.png, id=129, 1124.2pt x 843.15pt>
 File: Pictures/FreqMult4.png Graphic file (type png)
  <use Pictures/FreqMult4.png>
-Package pdftex.def Info: Pictures/FreqMult4.png used on input line 260.
+Package pdftex.def Info: Pictures/FreqMult4.png used on input line 259.
 (pdftex.def)             Requested size: 252.94499pt x 189.70056pt.
- <Pictures/FreqMultAll.png, id=131, 1124.2pt x 843.15pt>
+ <Pictures/FreqMultAll.png, id=130, 1124.2pt x 843.15pt>
 File: Pictures/FreqMultAll.png Graphic file (type png)
  <use Pictures/FreqMultAll.png>
-Package pdftex.def Info: Pictures/FreqMultAll.png used on input line 261.
+Package pdftex.def Info: Pictures/FreqMultAll.png used on input line 260.
 (pdftex.def)             Requested size: 252.94499pt x 189.70056pt.
 
-Overfull \hbox (9.67679pt too wide) in paragraph at lines 260--262
+Overfull \hbox (9.67679pt too wide) in paragraph at lines 259--261
 [][] [] 
  []
 
 
-Overfull \hbox (7.71194pt too wide) in paragraph at lines 268--294
+Overfull \hbox (7.71194pt too wide) in paragraph at lines 267--293
 \T1/ptm/m/n/9 The task of ma-nip-u-lat-ing over-tones with fil-ter-ing was dif-fi-cult mainly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--294
+Underfull \hbox (badness 10000) in paragraph at lines 267--293
 
  []
 
 [2 <./Pictures/FlowChart.png>] [3 <./Pictures/FreqPlot1.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- <Pictures/ASR.png, id=144, 663.98062pt x 398.48875pt>
-File: Pictures/ASR.png Graphic file (type png)
- <use Pictures/ASR.png>
-Package pdftex.def Info: Pictures/ASR.png used on input line 302.
-(pdftex.def)             Requested size: 180.67499pt x 108.4325pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 309.
+ <Pictures/Attack_Env.png, id=143, 526.96875pt x 395.22656pt>
+File: Pictures/Attack_Env.png Graphic file (type png)
+ <use Pictures/Attack_Env.png>
+Package pdftex.def Info: Pictures/Attack_Env.png used on input line 309.
+(pdftex.def)             Requested size: 216.81pt x 162.61081pt.
+ <Pictures/Release_Env.png, id=144, 526.96875pt x 395.22656pt>
+File: Pictures/Release_Env.png Graphic file (type png)
+ <use Pictures/Release_Env.png>
+Package pdftex.def Info: Pictures/Release_Env.png used on input line 310.
+(pdftex.def)             Requested size: 216.81pt x 162.61081pt.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 315.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 309.
- [4 <./Pictures/FreqMult1_2.png (PNG copy)> <./Pictures/FreqMult3.png (PNG copy)> <./Pictures/FreqMult4.png (PNG copy)> <./Pictures/FreqMultAll.png (PNG copy)>]
-Overfull \hbox (3.5704pt too wide) in paragraph at lines 314--319
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 315.
+
+Overfull \hbox (3.5704pt too wide) in paragraph at lines 320--325
 \T1/ptm/m/n/9 the am-pli-tude stays roughly con-stant as the sax-o-phone player
  []
 
+[4 <./Pictures/FreqMult1_2.png (PNG copy)> <./Pictures/FreqMult3.png (PNG copy)> <./Pictures/FreqMult4.png (PNG copy)> <./Pictures/FreqMultAll.png (PNG copy)>] <Pictures/EnvDetection.jpg, id=150, 1927.2pt x 939.51pt>
+File: Pictures/EnvDetection.jpg Graphic file (type jpg)
+ <use Pictures/EnvDetection.jpg>
+Package pdftex.def Info: Pictures/EnvDetection.jpg used on input line 341.
+(pdftex.def)             Requested size: 216.81pt x 105.68314pt.
 
-Overfull \hbox (6.74902pt too wide) in paragraph at lines 335--342
+Overfull \hbox (6.74902pt too wide) in paragraph at lines 347--354
 \T1/ptm/m/n/9 In or-der to gen-er-ate the am-pli-tude mul-ti-plier ta-bles men-tioned above,
  []
 
-<Pictures/EnvDetection.jpg, id=152, 1927.2pt x 939.51pt>
-File: Pictures/EnvDetection.jpg Graphic file (type jpg)
- <use Pictures/EnvDetection.jpg>
-Package pdftex.def Info: Pictures/EnvDetection.jpg used on input line 344.
-(pdftex.def)             Requested size: 216.81pt x 105.68314pt.
- <Pictures/Attack_Env.png, id=153, 526.96875pt x 395.22656pt>
-File: Pictures/Attack_Env.png Graphic file (type png)
- <use Pictures/Attack_Env.png>
-Package pdftex.def Info: Pictures/Attack_Env.png used on input line 350.
-(pdftex.def)             Requested size: 216.81pt x 162.61081pt.
- <Pictures/Release_Env.png, id=154, 526.96875pt x 395.22656pt>
-File: Pictures/Release_Env.png Graphic file (type png)
- <use Pictures/Release_Env.png>
-Package pdftex.def Info: Pictures/Release_Env.png used on input line 352.
-(pdftex.def)             Requested size: 216.81pt x 162.61081pt.
- <Pictures/NoteDetect1.jpg, id=157, 1927.2pt x 939.51pt>
+<Pictures/NoteDetect1.jpg, id=153, 1927.2pt x 939.51pt>
 File: Pictures/NoteDetect1.jpg Graphic file (type jpg)
  <use Pictures/NoteDetect1.jpg>
-Package pdftex.def Info: Pictures/NoteDetect1.jpg used on input line 373.
+Package pdftex.def Info: Pictures/NoteDetect1.jpg used on input line 356.
 (pdftex.def)             Requested size: 216.81pt x 105.68314pt.
- <Pictures/NoteDetect2.jpg, id=158, 1927.2pt x 939.51pt>
+ <Pictures/NoteDetect2.jpg, id=154, 1927.2pt x 939.51pt>
 File: Pictures/NoteDetect2.jpg Graphic file (type jpg)
  <use Pictures/NoteDetect2.jpg>
-Package pdftex.def Info: Pictures/NoteDetect2.jpg used on input line 374.
+Package pdftex.def Info: Pictures/NoteDetect2.jpg used on input line 357.
 (pdftex.def)             Requested size: 216.81pt x 105.68314pt.
- [5 <./Pictures/ASR.png> <./Pictures/EnvDetection.jpg> <./Pictures/Attack_Env.png (PNG copy)> <./Pictures/Release_Env.png (PNG copy)>] <Pictures/Sustain_Env.png, id=171, 526.96875pt x 395.22656pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--358
+[][]
+ []
+
+<Pictures/Sustain_Env.png, id=157, 526.96875pt x 395.22656pt>
 File: Pictures/Sustain_Env.png Graphic file (type png)
  <use Pictures/Sustain_Env.png>
-Package pdftex.def Info: Pictures/Sustain_Env.png used on input line 395.
+Package pdftex.def Info: Pictures/Sustain_Env.png used on input line 377.
 (pdftex.def)             Requested size: 216.81pt x 162.61081pt.
- <Pictures/Final_pic.PNG, id=173, 501.072pt x 390.258pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./Pictures/Attack_Env.png (PNG copy)> <./Pictures/Release_Env.png (PNG copy)> <./Pictures/EnvDetection.jpg> <./Pictures/NoteDetect1.jpg> <./Pictures/NoteDetect2.jpg>] <Pictures/Final_pic.PNG, id=169, 501.072pt x 390.258pt>
 File: Pictures/Final_pic.PNG Graphic file (type png)
  <use Pictures/Final_pic.PNG>
-Package pdftex.def Info: Pictures/Final_pic.PNG used on input line 415.
+Package pdftex.def Info: Pictures/Final_pic.PNG used on input line 412.
 (pdftex.def)             Requested size: 216.81pt x 168.86166pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--438
+Underfull \hbox (badness 10000) in paragraph at lines 419--435
 
  []
 
 
-Overfull \hbox (9.75659pt too wide) in paragraph at lines 440--442
+Overfull \hbox (9.75659pt too wide) in paragraph at lines 437--439
 \T1/ptm/m/n/9 time can be found here: []$\T1/pcr/m/n/9 https : / / www . youtube . com / watch ?
  []
 
-(notGuitar_DAFX.bbl [6 <./Pictures/NoteDetect1.jpg> <./Pictures/NoteDetect2.jpg> <./Pictures/Sustain_Env.png (PNG copy)> <./Pictures/Final_pic.PNG>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 451.
- [7
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 451.
+(notGuitar_DAFX.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
+ [6 <./Pictures/Sustain_Env.png (PNG copy)> <./Pictures/Final_pic.PNG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
  (notGuitar_DAFX.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 451.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 451.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
 Package rerunfilecheck Info: File `notGuitar_DAFX.out' has not changed.
 (rerunfilecheck)             Checksum: 25011330FCFB26663C06FDD23D4E7341;1725.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 451.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
  )
 (\end occurred when \ifx on line 64 was incomplete) 
 Here is how much of TeX's memory you used:
- 9965 strings out of 493323
- 160613 string characters out of 3139066
+ 9944 strings out of 493323
+ 160366 string characters out of 3139066
  280363 words of memory out of 3000000
- 13302 multiletter control sequences out of 15000+200000
- 34537 words of font info for 55 fonts, out of 3000000 for 9000
+ 13289 multiletter control sequences out of 15000+200000
+ 30272 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,39p,292b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on notGuitar_DAFX.pdf (7 pages, 1109096 bytes).
+ 36i,16n,39p,292b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on notGuitar_DAFX.pdf (6 pages, 1041033 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
