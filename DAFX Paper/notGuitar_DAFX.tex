@@ -1,3 +1,5 @@
+% !TeX program = pdflatex
+% !BIB program = bibtex
 % Template LaTeX file for DAFx-19 papers
 %
 % To generate the correct references using BibTeX, run
@@ -125,8 +127,8 @@ The specific sound of a particular instrument, or ``timbre'', is made up primari
 \cite{Zolzer:2011:DDA:2028616}. NotGuitar uses note onset and envelope detection combined with
 amplitude envelope modulation to alter the amplitude characteristics.
 To affect the frequency characteristics, notGuitar uses a Sliding Discrete Fourier Transform (SDFT)
-to perform rough pitch detection, then uses the rough pitch detection
-to inform an adaptive circular convolution filter.
+to perform rough pitch detection, which informs
+an adaptive circular convolution filter.
 The full system architecture can be seen in Fig. \ref{flowchart}.
 
 \begin{figure*}[ht]
@@ -332,8 +334,8 @@ muting the strings.
 
 \noindent
 We converted the amplitude envelope of a
-guitar to that of a saxophone by using use note detection methods to determine when
-the attack, sustain, and release parts of a note began
+guitar to that of a saxophone by using note detection methods to determine when
+the attack, sustain, and release parts of a note begin
 and then using multiplier
 tables to scale the signal to match the desired amplitude envelope.
 
@@ -366,7 +368,7 @@ and release multipliers. Following the process outlined in \cite{NoteOnset}
 we first implemented a short window peaking filter, and then used a threshold
 to determine when a new note had begun (see Fig. \ref{Onset}). Using the same method,
 but with a different threshold, we were able to detect the ends of notes as well.
-The issue with this method, was that if a note was already being sustained while
+The issue with this method was that if a note was already being sustained while
 the next note was played, the algorithm would not be able to detect the onset of
 the new note. To remedy this, we added another method of note detection: during
 the sustain part of the waveform, if the output of the peaking filter was some
@@ -430,7 +432,7 @@ Examples would include trumpet, violin, flute, etc.. This would
 require more off-line training to identify the frequency and
 amplitude characteristics of each instrument. Another aspect that would enhance the user experience
 would be to make the system be adaptable for users' desired control.
-For example, the system could allow for the user to vary the timbre intensity
+For example, the system could allow for the user to vary the timbral intensity
 and/or have a foot pedal to control sustain length.
 
 \section{Documentation of Real-Time System}
